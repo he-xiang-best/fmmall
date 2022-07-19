@@ -1,0 +1,35 @@
+server:
+  port: 8081
+
+# Mybatis-plus配置
+mybatis-plus:
+  global-config:
+    banner: false
+    db-config:
+      id-type: auto
+  #配置Mapper映射文件
+  mapper-locations: classpath:/mapper/**/*.xml
+  # 配置MyBatis数据返回类型别名（默认别名是类名）
+  type-aliases-package: com.gulimall.coupon.entity
+  configuration:
+    # 自动驼峰命名
+    map-underscore-to-camel-case: true
+
+# Mybatis SQL 打印(方法接口所在的包，不是Mapper.xml所在的包)
+logging:
+  level:
+    com.gulimall.coupon.dao: debug
+
+
+# mysql
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    #MySQL配置
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/gulimall_sms?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+
+
+
