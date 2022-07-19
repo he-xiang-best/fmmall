@@ -1,3 +1,3 @@
-# fmmall 锋迷商城
+# gulimall 谷粒商城
 
 The project is under development
