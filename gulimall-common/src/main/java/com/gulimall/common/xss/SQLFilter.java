@@ -8,7 +8,8 @@
 
 package com.gulimall.common.xss;
 
-import io.renren.common.exception.RRException;
+
+import com.gulimall.common.exception.RRException;
 import org.apache.commons.lang.StringUtils;
 
 /**
